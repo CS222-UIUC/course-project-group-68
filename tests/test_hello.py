@@ -1,2 +1,4 @@
 def test_placeholder():
-    pass
+    assert 0 == 0;
+    
+    
