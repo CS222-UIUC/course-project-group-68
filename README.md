@@ -5,4 +5,3 @@ course-project-group-68 created by GitHub Classroom
 
 ![Pytest](https://github.com/CS222-UIUC/course-project-group-68/actions/workflows/pytest.yml/badge.svg)
 
-![Gradle](https://github.com/CS222-UIUC/course-project-group-68/actions/workflows/gradle.yml/badge.svg)
