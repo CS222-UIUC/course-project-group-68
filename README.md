@@ -6,3 +6,5 @@ course-project-group-68 created by GitHub Classroom
 <!-- Pytest Coverage Comment:Begin -->
 <!-- Pytest Coverage Comment:End -->
 
+![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
+
