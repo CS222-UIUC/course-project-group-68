@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>LineCheck</title>
+<!--
+https://github.com/CS222-UIUC/course-project-group-68.git
+Lava Landing Page
+
+https://templatemo.com/tm-540-lava-landing-page
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <style>
+        #map {
+            margin-top: 60px;
+            height: 400px;
+            width: 100%;
+        }
+        #table {
+            margin-top: 60px;
+            margin-left: 1000px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            LINECHECK
+                            
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">Bar Covers</a></li>
+                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Search Restaurants</a>
+                            </li>
+                            
+                            
+                            <!-- <li class="submenu">
+                                <a href="javascript:;">Drop Down</a>
+                                <ul>
+                                    <li><a href="" class="menu-item">About Us</a></li>
+                                    <li><a href="" class="menu-item">Features</a></li>
+                                    <li><a href="" class="menu-item">FAQ's</a></li>
+                                    <li><a href="" class="menu-item">Blog</a></li>
+                                </ul>
+                            </li> -->
+                           
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Map</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            var options = {
+                zoom: 15.4,
+                center:{lat:40.111,lng:-88.242985}
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+
+<div style="float: left; margin-left: 200px; margin-top: 40px; font-size: 70px;">
+    <b>BARS</b>
+</div>
+
+<div style="float: left; margin-left: 400px; margin-top: 40px; font-size: 70px;">
+    <b>RESTAURANTS</b>
+</div>
+
+
+<div id="table"></div>
+    <font size="5" face="" >
+    <table width="100%">
+        <tr>
+            <td><b>Client</b></td>
+            <td><b>InstanceName</b></td>
+            <td><b>dbname</b></td>
+            <td><b>Filename</b></td>
+            <td><b>KeyName</b></td>
+            <td><b>Rotation</b></td>
+            <td><b>Path</b></td></tr>
+        <tr>
+            <td>NEWDEV6</td>
+            <td>EXPRESS2012</td>
+            <td>master</td>
+            <td>master.mdf</td>
+            <td>test_key_16</td>
+            <td>0</td>
+            <td>d:\Program&nbsp;Files\Microsoft&nbsp;SQL&nbsp;Server\MSSQL11.EXPRESS2012\MSSQL\DATA\master.mdf</td></tr>
+    </table></font>
+
+
+
+
+
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    ></script>
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
