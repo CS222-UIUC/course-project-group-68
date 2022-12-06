@@ -158,6 +158,20 @@ a.main-button-slider {
   transition: all 0.3s ease 0s;
 }
 
+a.navbar {
+  font-size: 14px;
+  color: #464956;
+  font-sirgb(58, 59, 70)x;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  float: left;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 a.main-button-slider:hover {
   background-color: #f1556a;
 }
@@ -289,6 +303,8 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
+
 
 
 .header-area .main-nav .nav {

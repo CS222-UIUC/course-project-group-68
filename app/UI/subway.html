@@ -54,9 +54,11 @@ https://templatemo.com/tm-540-lava-landing-page
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
+                        <div id="table">
                         <ul class="nav">
                             <a href="landing.html" class="navbar">Bars</a>
                             <a href="rest.html" class="navbar">Restaurants</a>
+                            </div>
                             
                             
                             <!-- <li class="submenu">
@@ -69,6 +71,7 @@ https://templatemo.com/tm-540-lava-landing-page
                                 </ul>
                             </li> -->
                            
+                            
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -91,12 +94,12 @@ https://templatemo.com/tm-540-lava-landing-page
                 <div class="row">
                     <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                         data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <img src="assets/images/murphy.png" alt=""
-                        height=250px></img>
+                        <img src="assets/images/image.png" alt=""
+                        height=200px></img>
                         <h1> </h1>
-                        <em>604 E Green St, Champaign, IL 61820</em>
+                        <em>616 E Green St Suite A, Champaign, IL 61820</em>
                         <p>____________________________________</p>
-                        <p> Welcome to Murphy's Pub, the best pub on campus! SERVING ILLINI SINCE 1969. Serving various beers and the best pub food on campus! Book Events Now! </p>
+                        <p> Discover better-for-you sub sandwiches at Subway. View our menu of sandwiches, order online, find restaurants, order catering or buy gift cards. </p>
                         <ul class="nav"> 
                             <li class="scroll-to-section"><a href="#contact-us" class="main-button-slider">Click to Update Wait Time!</a></li>
                         </ul>
@@ -149,7 +152,7 @@ https://templatemo.com/tm-540-lava-landing-page
                     <!-- ***** Contact Form End ***** -->
                     <div class="right-content col-lg-6 col-md-12 col-sm-12">
                         <h2><em>Input Your Wait Time</em></h2>
-                        <p>Please input your estimated wait time for Murphy's Pub here! Your input is greatly appreciated and will displayed to all users.
+                        <p>Please input your estimated wait time for Subway here! Your input is greatly appreciated and will displayed to all users.
                         </p>
                         <!-- <ul class="social">
                             <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
@@ -223,7 +226,7 @@ https://templatemo.com/tm-540-lava-landing-page
                 const name = document.getElementById('name').value;
                 const waitTime = document.getElementById('message').value;
                 const docRef = await addDoc(collection(db, "waitT"), {
-                    barName: 'murphy',
+                    barName: 'joes',
                     name: name,
                     time: Number(waitTime),
                     createdAt: Date.now(),
