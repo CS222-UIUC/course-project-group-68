@@ -124,7 +124,7 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b> <span id="kamsTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <br>Deal of the Day: <b><span id="kamsDeal"></b></span> </br>
             </td>
         </tr>
         <tr>
@@ -138,7 +138,7 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b> <span id="joesTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <br>Deal of the Day: <b>$2 Vodka Cran + Sprite</br></br>
             </td>
         </tr>
 
@@ -153,7 +153,7 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b><span id="murphyTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <br>Deal of the Day: <b>$6 Glass + $3.50 Refill</br></br>
             </td>
         </tr>
         
@@ -168,7 +168,7 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b><span id="lionTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <br>Deal of the Day: <b>$3 Seltzers</br></br>
             </td>
         </tr>
         
@@ -268,6 +268,31 @@ https://templatemo.com/tm-540-lava-landing-page
             const kamsAvg = kamsArr.reduce((a, b) => a + b) / kamsArr.length;
             kamsEl.innerHTML = Math.round(kamsAvg);
         } catch (error) {}
+
+        const kamsEl2 = document.getElementById("kamsDeal");
+        switch (new Date().getDay()) {
+            case 0:
+                kamsEl2.innerHTML = "No Deals";
+                break;
+            case 1:
+                kamsEl2.innerHTML = "$2 Blue Guys";
+                break;
+            case 2:
+                kamsEl2.innerHTML = "$3 Big Cups";
+                break;
+            case 3:
+                kamsEl2.innerHTML = "$3 Blue Lemonade";
+                break;
+            case 4:
+                kamsEl2.innerHTML = "$2 U CALL IT";
+                break;
+            case 5:
+                kamsEl2.innerHTML = "$2 Blue Guys";
+                break;
+            case 6:
+                kamsEl2.innerHTML = "$2 Wells + Blue Guys";
+            }
+
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Joes
         const joesEl = document.getElementById("joesTime");
@@ -323,6 +348,11 @@ https://templatemo.com/tm-540-lava-landing-page
             lionEl.innerHTML = Math.round(lionAvg);
         } catch (error) {}
     </script>
+
+    <script>
+
+    </script>
+
 
 </body>
 </html>

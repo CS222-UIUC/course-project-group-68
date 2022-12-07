@@ -124,7 +124,7 @@ https://templatemo.com/tm-540-lava-landing-page
         <tr>
             <td width=600px height=400px>
                 <a href="chipotle.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
+                    <img src="assets/images/chipotle.png" alt=""
                         width="500px"
                         height=auto
                     />
@@ -132,58 +132,58 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b> <span id="chipotleTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
         <tr>
             <td width=600px height=400px>
                 <a href="mcdonalds.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
-                        width="500px"
+                    <img src="assets/images/mcdonalds.png" alt=""
+                        width="450px"
                         height=auto
                     />
                 </a>
             </td>
             <td>
                 Wait Time: <b> <span id="mcdonaldsTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
 
         <tr>
-            <td width=600px height=400px>
+            <td width=600px height=500px>
                 <a href="tacobell.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
-                        width="500px"
+                    <img src="assets/images/tacobell.png" alt=""
+                        width="550px"
                         height=auto
                     />
                 </a>
             </td>
             <td>
                 Wait Time: <b> <span id="tacobellTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
 
         <tr>
-            <td width=600px height=400px>
+            <td width=600px height=100px>
                 <a href="subway.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
-                        width="500px"
+                    <img src="assets/images/subway.png" alt=""
+                        width="550px"
                         height=auto
                     />
                 </a>
             </td>
             <td>
                 Wait Time: <b> <span id="subwayTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
 
         <tr>
-            <td width=600px height=400px>
+            <td width=600px height=650px>
                 <a href="jurassic.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
+                    <img src="assets/images/jurassic.png" alt=""
                         width="500px"
                         height=auto
                     />
@@ -191,14 +191,14 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b> <span id="jurassicTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
 
         <tr>
-            <td width=600px height=400px>
+            <td width=600px height=200px>
                 <a href="noodles.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
+                    <img src="assets/images/noodles.png" alt=""
                         width="500px"
                         height=auto
                     />
@@ -206,14 +206,14 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b> <span id="noodlesTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
 
         <tr>
-            <td width=600px height=400px>
+            <td width=600px height=700px>
                 <a href="jimmyjohns.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
+                    <img src="assets/images/jimmyjohns.png" alt=""
                         width="500px"
                         height=auto
                     />
@@ -221,14 +221,14 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b> <span id="jimmyjohnsTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
 
         <tr>
-            <td width=600px height=400px>
+            <td width=600px height=140px>
                 <a href="panda.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
+                    <img src="assets/images/panda.png" alt=""
                         width="500px"
                         height=auto
                     />
@@ -236,14 +236,14 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b> <span id="pandaTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
 
         <tr>
-            <td width=600px height=400px>
+            <td width=600px height=370px>
                 <a href="target.html" type="button" class="submit">
-                    <img src="assets/images/kams.png" alt=""
+                    <img src="assets/images/target.png" alt=""
                         width="500px"
                         height=auto
                     />
@@ -251,7 +251,7 @@ https://templatemo.com/tm-540-lava-landing-page
             </td>
             <td>
                 Wait Time: <b> <span id="targetTime">0</span> minutes</b>
-                <br>Deal of the Day:</br>
+                <!-- <br>Deal of the Day:</br> -->
             </td>
         </tr>
         
@@ -334,74 +334,177 @@ https://templatemo.com/tm-540-lava-landing-page
         const analytics = getAnalytics(app);
 
         const waitRef = collection(db, "waitT");
-
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Chipotle
         const chipotleEl = document.getElementById("chipotleTime");
 
         const chipotleWaitTimes = query(waitRef, where("barName", "==", 'chipotle'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        const t = await getDocs(chipotleWaitTimes);
+        // Query
+        const chipotleDocs = await getDocs(chipotleWaitTimes);
 
-        console.log(t);
+        let chipotleArr = [];
 
-        chipotleEl.innerHTML = chipotleWaitTimes;
+        chipotleDocs.forEach((el) => {
+            chipotleArr.push(el.data().time);
+        })
 
+        try {
+            const chipotleAvg = chipotleArr.reduce((a, b) => a + b) / chipotleArr.length;
+            chipotleEl.innerHTML = Math.round(chipotleAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // McDonald's
         const mcdonaldsEl = document.getElementById("mcdonaldsTime");
 
         const mcdonaldsWaitTimes = query(waitRef, where("barName", "==", 'mcdonalds'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        mcdonaldsEl.innerHTML = mcdonaldsWaitTimes;
-        
+        // Query
+        const mcdonaldsDocs = await getDocs(mcdonaldsWaitTimes);
+
+        let mcdonaldsArr = [];
+
+        mcdonaldsDocs.forEach((el) => {
+            mcdonaldsArr.push(el.data().time);
+        })
+
+        try {
+            const mcdonaldsAvg = mcdonaldsArr.reduce((a, b) => a + b) / mcdonaldsArr.length;
+            mcdonaldsEl.innerHTML = Math.round(mcdonaldsAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Taco Bell
         const tacobellEl = document.getElementById("tacobellTime");
 
         const tacobellWaitTimes = query(waitRef, where("barName", "==", 'tacobell'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        tacobellEl.innerHTML = tacobellWaitTimes;
-        
+        // Query
+        const tacobellDocs = await getDocs(tacobellWaitTimes);
+
+        let tacobellArr = [];
+
+        tacobellDocs.forEach((el) => {
+            tacobellArr.push(el.data().time);
+        })
+
+        try {
+            const tacobellAvg = tacobellArr.reduce((a, b) => a + b) / tacobellArr.length;
+            tacobellEl.innerHTML = Math.round(tacobellAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------        
         // Subway
         const subwayEl = document.getElementById("subwayTime");
 
         const subwayWaitTimes = query(waitRef, where("barName", "==", 'subway'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        subwayEl.innerHTML = subwayWaitTimes;
+        // Query
+        const subwayDocs = await getDocs(subwayWaitTimes);
 
+        let subwayArr = [];
+
+        subwayDocs.forEach((el) => {
+            subwayArr.push(el.data().time);
+        })
+
+        try {
+            const subwayAvg = subwayArr.reduce((a, b) => a + b) / subwayArr.length;
+            subwayEl.innerHTML = Math.round(subwayAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Jurrasic Grill
         const jurassicEl = document.getElementById("jurassicTime");
 
         const jurassicWaitTimes = query(waitRef, where("barName", "==", 'jurassic'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        jurassicEl.innerHTML = jurassicWaitTimes;
+        // Query
+        const jurassicDocs = await getDocs(jurassicWaitTimes);
 
+        let jurassicArr = [];
+
+        jurassicDocs.forEach((el) => {
+            jurassicArr.push(el.data().time);
+        })
+
+        try {
+            const jurassicAvg = jurassicArr.reduce((a, b) => a + b) / jurassicArr.length;
+            jurassicEl.innerHTML = Math.round(jurassicAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Noodles & Co.
         const noodlesEl = document.getElementById("noodlesTime");
 
         const noodlesWaitTimes = query(waitRef, where("barName", "==", 'noodles'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        noodlesEl.innerHTML = noodlesWaitTimes;
+        // Query
+        const noodlesDocs = await getDocs(noodlesWaitTimes);
 
+        let noodlesArr = [];
+
+        noodlesDocs.forEach((el) => {
+            noodlesArr.push(el.data().time);
+        })
+
+        try {
+            const noodlesAvg = noodlesArr.reduce((a, b) => a + b) / noodlesArr.length;
+            noodlesEl.innerHTML = Math.round(noodlesAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Jimmy Johns
         const jimmyjohnsEl = document.getElementById("jimmyjohnsTime");
 
         const jimmyjohnsWaitTimes = query(waitRef, where("barName", "==", 'jimmyjohns'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        jimmyjohnsEl.innerHTML = jimmyjohnsWaitTimes;
+        // Query
+        const jimmyjohnsDocs = await getDocs(jimmyjohnsWaitTimes);
 
+        let jimmyjohnsArr = [];
+
+        jimmyjohnsDocs.forEach((el) => {
+            jimmyjohnsArr.push(el.data().time);
+        })
+
+        try {
+            const jimmyjohnsAvg = jimmyjohnsArr.reduce((a, b) => a + b) / jimmyjohnsArr.length;
+            jimmyjohnsEl.innerHTML = Math.round(jimmyjohnsAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Panda Express
         const pandaEl = document.getElementById("pandaTime");
 
         const pandaWaitTimes = query(waitRef, where("barName", "==", 'panda'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        pandaEl.innerHTML = pandaWaitTimes;
+        // Query
+        const pandaDocs = await getDocs(pandaWaitTimes);
 
+        let pandaArr = [];
+
+        pandaDocs.forEach((el) => {
+            pandaArr.push(el.data().time);
+        })
+
+        try {
+            const pandaAvg = pandaArr.reduce((a, b) => a + b) / pandaArr.length;
+            pandaEl.innerHTML = Math.round(pandaAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Target
         const targetEl = document.getElementById("targetTime");
 
         const targetWaitTimes = query(waitRef, where("barName", "==", 'target'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
-        targetEl.innerHTML = targetWaitTimes;
+        // Query
+        const targetDocs = await getDocs(targetWaitTimes);
 
+        let targetArr = [];
+
+        targetDocs.forEach((el) => {
+            targetArr.push(el.data().time);
+        })
+
+        try {
+            const targetAvg = targetArr.reduce((a, b) => a + b) / targetArr.length;
+            targetEl.innerHTML = Math.round(targetAvg);
+        } catch (error) {}
     </script>
 
 </body>
