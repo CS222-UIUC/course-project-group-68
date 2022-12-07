@@ -158,10 +158,25 @@ a.main-button-slider {
   transition: all 0.3s ease 0s;
 }
 
+a.main-button-slider2 {
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 15px 25px;
+  background-color: #f4813f;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 a.navbar {
   font-size: 14px;
   color: #464956;
-  font-sirgb(58, 59, 70)x;
+  font-size: (58, 59, 70)x;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -189,6 +204,22 @@ a.main-button {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+a.main-button {
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 15px 25px;
+  background-color: #f4813f;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-top: 25px;
 }
 
 a.main-button:hover {

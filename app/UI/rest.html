@@ -29,7 +29,7 @@ https://templatemo.com/tm-540-lava-landing-page
     <style>
         #map {
             margin-top: 60px;
-            height: 400px;
+            height: 600px;
             width: 100%;
         }
         #table {
@@ -261,9 +261,10 @@ https://templatemo.com/tm-540-lava-landing-page
 
 
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-    ></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7UGJg7q9aqhjERwE9v6adfto6Fl4Esb8&callback=initMap&v=weekly"
+></script>
+
 
 
 
@@ -369,7 +370,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Jurrasic Grill
         const jurassicEl = document.getElementById("jurassicTime");
 
-        const jurassicTimes = query(waitRef, where("barName", "==", 'jurassic'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const jurassicWaitTimes = query(waitRef, where("barName", "==", 'jurassic'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
         jurassicEl.innerHTML = jurassicWaitTimes;
 
@@ -386,6 +387,20 @@ https://templatemo.com/tm-540-lava-landing-page
         const jimmyjohnsWaitTimes = query(waitRef, where("barName", "==", 'jimmyjohns'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
 
         jimmyjohnsEl.innerHTML = jimmyjohnsWaitTimes;
+
+        // Panda Express
+        const pandaEl = document.getElementById("pandaTime");
+
+        const pandaWaitTimes = query(waitRef, where("barName", "==", 'panda'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+
+        pandaEl.innerHTML = pandaWaitTimes;
+
+        // Target
+        const targetEl = document.getElementById("targetTime");
+
+        const targetWaitTimes = query(waitRef, where("barName", "==", 'target'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+
+        targetEl.innerHTML = targetWaitTimes;
 
     </script>
 

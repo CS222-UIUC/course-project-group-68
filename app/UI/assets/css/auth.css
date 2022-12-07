@@ -78,6 +78,31 @@ button {
     cursor: pointer;
 }
 
+a.main-button-slider {
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    background-color: #fba70b;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 45px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
 .img {
     overflow: hidden;
     z-index: 2;

@@ -29,7 +29,7 @@ https://templatemo.com/tm-540-lava-landing-page
     <style>
         #map {
             margin-top: 60px;
-            height: 400px;
+            height: 600px;
             width: 100%;
         }
         #table {
@@ -179,7 +179,7 @@ https://templatemo.com/tm-540-lava-landing-page
 
 
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7UGJg7q9aqhjERwE9v6adfto6Fl4Esb8&callback=initMap&v=weekly"
     ></script>
 
 
@@ -250,39 +250,78 @@ https://templatemo.com/tm-540-lava-landing-page
         const analytics = getAnalytics(app);
 
         const waitRef = collection(db, "waitT");
-
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Kams
         const kamsEl = document.getElementById("kamsTime");
 
-        const kamsWaitTimes = query(waitRef, where("barName", "==", 'kams'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const kamsWaitTimes = query(waitRef, where("barName", "==", 'kams'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
+        // Query
+        const kamsDocs = await getDocs(kamsWaitTimes);
 
-        const t = await getDocs(kamsWaitTimes);
+        let kamsArr = [];
 
-        console.log(t);
+        kamsDocs.forEach((el) => {
+            kamsArr.push(el.data().time);
+        })
 
-        kamsEl.innerHTML = kamsWaitTimes;
-
+        try {
+            const kamsAvg = kamsArr.reduce((a, b) => a + b) / kamsArr.length;
+            kamsEl.innerHTML = Math.round(kamsAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Joes
         const joesEl = document.getElementById("joesTime");
 
-        const joesWaitTimes = query(waitRef, where("barName", "==", 'joes'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const joesWaitTimes = query(waitRef, where("barName", "==", 'joes'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
+        // Query
+        const joesDocs = await getDocs(joesWaitTimes);
 
-        joesEl.innerHTML = joesWaitTimes;
-        
+        let joesArr = [];
+
+        joesDocs.forEach((el) => {
+            joesArr.push(el.data().time);
+        })
+
+        try {
+            const joesAvg = joesArr.reduce((a, b) => a + b) / joesArr.length;
+            joesEl.innerHTML = Math.round(joesAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Murphy
         const murphyEl = document.getElementById("murphyTime");
 
-        const murphyWaitTimes = query(waitRef, where("barName", "==", 'murphy'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const murphyWaitTimes = query(waitRef, where("barName", "==", 'murphy'), where("createdAt", ">", Math.floor(Date.now() - 1800000)));
+        // Query
+        const murphyDocs = await getDocs(murphyWaitTimes);
 
-        murphyEl.innerHTML = murphyWaitTimes;
-        
+        let murphyArr = [];
+
+        murphyDocs.forEach((el) => {
+            murphyArr.push(el.data().time);
+        })
+
+        try {
+            const murphyAvg = murphyArr.reduce((a, b) => a + b) / murphyArr.length;
+            murphyEl.innerHTML = Math.round(murphyAvg);
+        } catch (error) {}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
         // Lion
         const lionEl = document.getElementById("lionTime");
 
-        const lionWaitTimes = query(waitRef, where("barName", "==", 'lion'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const lionWaitTimes = query(waitRef, where("barName", "==", 'lion'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
+        // Query
+        const lionDocs = await getDocs(lionWaitTimes);
 
-        lionEl.innerHTML = lionWaitTimes;
+        let lionArr = [];
 
+        lionDocs.forEach((el) => {
+            lionArr.push(el.data().time);
+        })
+
+        try {
+            const lionAvg = lionArr.reduce((a, b) => a + b) / lionArr.length;
+            lionEl.innerHTML = Math.round(lionAvg);
+        } catch (error) {}
     </script>
 
 </body>
