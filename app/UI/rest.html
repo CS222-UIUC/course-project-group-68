@@ -338,7 +338,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Chipotle
         const chipotleEl = document.getElementById("chipotleTime");
 
-        const chipotleWaitTimes = query(waitRef, where("barName", "==", 'chipotle'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const chipotleWaitTimes = query(waitRef, where("barName", "==", 'chipotle'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const chipotleDocs = await getDocs(chipotleWaitTimes);
@@ -357,7 +357,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // McDonald's
         const mcdonaldsEl = document.getElementById("mcdonaldsTime");
 
-        const mcdonaldsWaitTimes = query(waitRef, where("barName", "==", 'mcdonalds'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const mcdonaldsWaitTimes = query(waitRef, where("barName", "==", 'mcdonalds'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const mcdonaldsDocs = await getDocs(mcdonaldsWaitTimes);
@@ -376,7 +376,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Taco Bell
         const tacobellEl = document.getElementById("tacobellTime");
 
-        const tacobellWaitTimes = query(waitRef, where("barName", "==", 'tacobell'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const tacobellWaitTimes = query(waitRef, where("barName", "==", 'tacobell'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const tacobellDocs = await getDocs(tacobellWaitTimes);
@@ -395,7 +395,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Subway
         const subwayEl = document.getElementById("subwayTime");
 
-        const subwayWaitTimes = query(waitRef, where("barName", "==", 'subway'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const subwayWaitTimes = query(waitRef, where("barName", "==", 'subway'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const subwayDocs = await getDocs(subwayWaitTimes);
@@ -414,7 +414,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Jurrasic Grill
         const jurassicEl = document.getElementById("jurassicTime");
 
-        const jurassicWaitTimes = query(waitRef, where("barName", "==", 'jurassic'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const jurassicWaitTimes = query(waitRef, where("barName", "==", 'jurassic'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const jurassicDocs = await getDocs(jurassicWaitTimes);
@@ -433,7 +433,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Noodles & Co.
         const noodlesEl = document.getElementById("noodlesTime");
 
-        const noodlesWaitTimes = query(waitRef, where("barName", "==", 'noodles'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const noodlesWaitTimes = query(waitRef, where("barName", "==", 'noodles'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const noodlesDocs = await getDocs(noodlesWaitTimes);
@@ -452,7 +452,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Jimmy Johns
         const jimmyjohnsEl = document.getElementById("jimmyjohnsTime");
 
-        const jimmyjohnsWaitTimes = query(waitRef, where("barName", "==", 'jimmyjohns'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const jimmyjohnsWaitTimes = query(waitRef, where("barName", "==", 'jimmyjohns'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const jimmyjohnsDocs = await getDocs(jimmyjohnsWaitTimes);
@@ -471,7 +471,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Panda Express
         const pandaEl = document.getElementById("pandaTime");
 
-        const pandaWaitTimes = query(waitRef, where("barName", "==", 'panda'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const pandaWaitTimes = query(waitRef, where("barName", "==", 'panda'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const pandaDocs = await getDocs(pandaWaitTimes);
@@ -490,7 +490,7 @@ https://templatemo.com/tm-540-lava-landing-page
         // Target
         const targetEl = document.getElementById("targetTime");
 
-        const targetWaitTimes = query(waitRef, where("barName", "==", 'target'), where("createdAt", ">", Math.floor(Date.now() / 1000) - 1800));
+        const targetWaitTimes = query(waitRef, where("barName", "==", 'target'), where("createdAt", ">", Math.floor(Date.now()) - 1800000));
 
         // Query
         const targetDocs = await getDocs(targetWaitTimes);
