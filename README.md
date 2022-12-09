@@ -24,7 +24,7 @@
 * Kaan and Stefan:
   *  Main focus was to find a database that could store the information from the website in the form of queries, and learn how to sort through the queries to display the data onto the screens. A lot of the work that they did in the early stages was learning about the functionality of databases and the later stages was implementing the databases using FireBase.
 
-
+<br>
 
 course-project-group-68 created by GitHub Classroom
 
