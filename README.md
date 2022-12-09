@@ -5,7 +5,7 @@
 
 ## Technical Architecture
 * Frontend
-** When it comes to the architecture of our project, it was quite simple. We had a frontend aspect that dealt with everything that the user sees. This was coded in HTML, CSS, and JS. The HTML dealt with most of the text and pictures that appeared on the site. The CSS was used to add fonts and other styling elements to the HTML. The JS was used to animate some features of the HTML and also supported some technical functions used in the HTML files.
+* When it comes to the architecture of our project, it was quite simple. We had a frontend aspect that dealt with everything that the user sees. This was coded in HTML, CSS, and JS. The HTML dealt with most of the text and pictures that appeared on the site. The CSS was used to add fonts and other styling elements to the HTML. The JS was used to animate some features of the HTML and also supported some technical functions used in the HTML files.
 
 
 
