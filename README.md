@@ -6,6 +6,8 @@
 ## Technical Architecture
 * Frontend
   * When it comes to the architecture of our project, it was quite simple. We had a frontend aspect that dealt with everything that the user sees. This was coded in HTML, CSS, and JS. The HTML dealt with most of the text and pictures that appeared on the site. The CSS was used to add fonts and other styling elements to the HTML. The JS was used to animate some features of the HTML and also supported some technical functions used in the HTML files.
+* Backend
+  * On the backend side, we used FireBase to store our data. We included a request handler in our Bar and Restaurant HTML files to connect the collection we created in FireBase to our code. Then we created a query where we checked the bar’s name and the time the query was created. If the query is not the bar's name or wasn’t created in the last 30 minutes, then we don’t pull the data. After adding each query to a document, we parse through the document and put the wait time that the user posted into an array. Then we take the average value of that array and post it to our landing page. 
 
 
 
